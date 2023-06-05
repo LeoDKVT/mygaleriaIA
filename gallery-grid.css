@@ -57,3 +57,33 @@ body {
 footer p {
     margin-bottom: 0px;
 }
+
+
+
+/* footer do site */
+.redesocial a {
+    text-decoration: none;
+  }
+  
+
+  .redesocial i {
+    color: #F9F871;
+    font-size: 30px;
+    transition-duration: 0.3s;
+  }
+  
+  .redesocial #gmail i:hover {
+    color: #63084D;
+  }
+  
+  .redesocial #linkedin i:hover {
+    color: #63084D;
+  }
+  
+  .redesocial #github i:hover {
+    color: #63084D;
+  }
+  
+  .redesocial #whatsapp i:hover {
+    color: #63084D;
+  }
