@@ -1,6 +1,5 @@
 body {
     background-color: #343434;
-    min-height: 100vh;
 }
 
 .container.gallery-container {
@@ -54,4 +53,8 @@ body {
     .container.gallery-container {
         border-radius: 0;
     }
+}
+
+footer p {
+    margin-bottom: 0px;
 }
