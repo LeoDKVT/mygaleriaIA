@@ -23,7 +23,7 @@
 
 <body>
 
-    <header id="#">
+    <header>
         <nav class="redesocial navbar bg-black">
             <div class="container">
                 <a class="navbar-brand" href="#">
@@ -66,91 +66,86 @@
             <div class="row">
                 <div class="col-sm-6 col-md-4">
                     <a class="lightbox" href="img/Phoenix.jpg">
-                        <img src="img/Phoenix.jpg" alt="Park">
+                        <img src="img/Phoenix.jpg" alt="...........">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <a class="lightbox" href="img/Sylphine.jpg">
-                        <img src="img/Sylphine.jpg" alt="Bridge">
+                        <img src="img/Sylphine.jpg" alt="...........">
                     </a>
                 </div>
                 <div class="col-sm-12 col-md-4">
                     <a class="lightbox" href="img/phoenix-bird.jpg">
-                        <img src="img/phoenix-bird.jpg" alt="Tunnel">
+                        <img src="img/phoenix-bird.jpg" alt="...........">
                     </a>
                 </div>
 
                 <div class="col-sm-6 col-md-6">
                     <a class="lightbox" href="img/homem-de-ferro-black.jpg">
-                        <img src="img/homem-de-ferro-black.jpg" alt="Bridge">
+                        <img src="img/homem-de-ferro-black.jpg" alt="...........">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-6">
                     <a class="lightbox" href="img/homem-aranha.jpg">
-                        <img src="img/homem-aranha.jpg" alt="Bridge">
+                        <img src="img/homem-aranha.jpg" alt="...........">
                     </a>
                 </div>
 
                 <div class="col-sm-6 col-md-4">
                     <a class="lightbox" href="img/poke1.jpg">
-                        <img src="img/poke1.jpg" alt="Park">
+                        <img src="img/poke1.jpg" alt="...........">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <a class="lightbox" href="img/poke2.jpg">
-                        <img src="img/poke2.jpg" alt="Bridge">
+                        <img src="img/poke2.jpg" alt="...........">
                     </a>
                 </div>
                 <div class="col-sm-12 col-md-4">
                     <a class="lightbox" href="img/poke3.jpg">
-                        <img src="img/poke3.jpg" alt="Tunnel">
+                        <img src="img/poke3.jpg" alt="...........">
                     </a>
                 </div>
 
                 <div class="col-sm-12 col-md-6">
                     <a class="lightbox" href="img/1.jpg">
-                        <img src="img/1.jpg" alt="Tunnel">
+                        <img src="img/1.jpg" alt="...........">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-6">
                     <a class="lightbox" href="img/2.jpg">
-                        <img src="img/2.jpg" alt="Bridge">
+                        <img src="img/2.jpg" alt="...........">
                     </a>
                 </div>
 
                 <div class="col-sm-6 col-md-4">
                     <a class="lightbox" href="img/beautiful-white-samoyed-dog.jpg">
-                        <img src="img/beautiful-white-samoyed-dog.jpg" alt="Park">
+                        <img src="img/beautiful-white-samoyed-dog.jpg" alt="...........">
                     </a>
                 </div>
 
                 <div class="col-sm-12 col-md-4">
                     <a class="lightbox" href="img/ultra-leon-highly.jpg">
-                        <img src="img/ultra-leon-highly.jpg" alt="Tunnel">
+                        <img src="img/ultra-leon-highly.jpg" alt="...........">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <a class="lightbox" href="img/Sylphine-duo.jpg">
-                        <img src="img/Sylphine-duo.jpg" alt="Bridge">
+                        <img src="img/Sylphine-duo.jpg" alt="...........">
                     </a>
                 </div>
-
-
-
             </div>
-
 
             <div class="d-flex justify-content-end">
-                <button class="btn-degrade justify-content-end align-self-end border-0 mt-2">
+                <button onclick="voltarAoTopo()" class="btn-degrade justify-content-end align-self-end border-0 mt-2">
                     <a
-                        class="text-decoration-none text-dark fw-bold" href="#">Back to the top
+                        class="text-decoration-none text-dark fw-bold">Back to the top
                     </a>
                 </button>
+
             </div>
 
-
         </div>
-
     </div>
 
     <footer class="bg-black">
@@ -159,8 +154,12 @@
         </p>
     </footer>
 
-
-
+    <script>
+        function voltarAoTopo() {
+          document.body.scrollTop = 0; // Para navegadores Safari
+          document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+        }
+    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
     <script>
