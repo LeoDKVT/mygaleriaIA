@@ -12,5 +12,5 @@ Gostaria de mostrar um site que desenvolvi, onde você pode encontrar uma galeri
  - [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - Framework
  - [GITHUB PAGES](https://pages.github.com/) - Hosting
 
-### Prerequisites
+## Getting Started
 ...
