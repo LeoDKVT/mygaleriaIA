@@ -1,7 +1,7 @@
 # A Magia da Inteligência Artificial em Imagens
 Gostaria de mostrar um site que desenvolvi, onde você pode encontrar uma galeria de imagens. Todas as obras foram feitas por mim, utilizando inteligência artificial.
 
-[mygaleriaIA.io](https://leodkvt.github.io/mygaleriaIA/)
+Visite o site → [mygaleriaIA.io](https://leodkvt.github.io/mygaleriaIA/)
 
 ## Demo
 ![img do navegador](https://i.imgur.com/jU3A0Ou.png)
@@ -12,5 +12,12 @@ Gostaria de mostrar um site que desenvolvi, onde você pode encontrar uma galeri
  - [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - Framework
  - [GITHUB PAGES](https://pages.github.com/) - Hosting
 
-## Getting Started
-...
+## Cloning the Repository.
+Se você tiver o [Git](https://git-scm.com/) instalado em seu computador, basta clonar ou baixar o repositório executando o seguinte comando em seu terminal.
+
+```bash
+git clone https://github.com/LeoDKVT/mygaleriaIA
+```
+Como alternativa, clique neste [link](https://github.com/LeoDKVT/mygaleriaIA/archive/refs/heads/main.zip) para baixá-lo.
+
+### Contribuições são bem-vindas❤️.
