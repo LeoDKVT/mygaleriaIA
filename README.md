@@ -3,17 +3,14 @@ Gostaria de mostrar um site que desenvolvi, onde você pode encontrar uma galeri
 
 [mygaleriaIA.io](https://leodkvt.github.io/mygaleriaIA/)
 
-
 ## Demo
-
-![alt text](https://i.imgur.com/KKrZOWp.gif)
-
-![Papermark Welcome GIF](.github/images/papermark-welcome.gif)
-
+![img do navegador](https://i.imgur.com/jU3A0Ou.png)
 
 ## Tech Stack
-
  - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - Markup Language
  - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - Style Sheet Language
  - [Bootstrap](https://getbootstrap.com/docs/4.6/getting-started/introduction/) - Framework
  - [GITHUB PAGES](https://pages.github.com/) - Hosting
+
+### Prerequisites
+...
