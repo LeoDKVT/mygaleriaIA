@@ -4,7 +4,7 @@ Gostaria de mostrar um site que desenvolvi, onde você pode encontrar uma galeri
 Visite o site → [mygaleriaIA.io](https://leodkvt.github.io/mygaleriaIA/)
 
 ## Demo
-![img do navegador](https://i.imgur.com/jU3A0Ou.png)
+![Portfolio Template Gif](assets/images/mygaleriaIA.gif)
 
 ## Tech Stack
  - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - Markup Language
