@@ -20,6 +20,30 @@
     <script src="https://kit.fontawesome.com/abaa1d2832.js" crossorigin="anonymous"></script>
 
     <title>Minhas imagens criadas com IA</title>
+
+    <style>
+        #btnTopo {
+            display: none;
+            position: fixed;
+            color: white;
+            background-color: #63084d;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            bottom: 80px;
+            right: 10px;
+            z-index: 99;
+            font-size: 24px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        #btnTopo:hover {
+            color: rgb(0, 0, 0);
+            background-color: #f9f871;
+        }
+    </style>
 </head>
 
 <body>
@@ -65,8 +89,7 @@
             <div class="row">
                 <div class="col-sm-6 col-md-4">
                     <a class="lightbox" href="assets/images/page3/mulher-aguia.png">
-                        <img src="assets/images/page3/mulher-aguia.png"
-                            alt="imagem de uma mulher criada com IA">
+                        <img src="assets/images/page3/mulher-aguia.png" alt="imagem de uma mulher criada com IA">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4">
@@ -88,13 +111,15 @@
                 </div>
                 <div class="col-sm-6 col-md-6">
                     <a class="lightbox" href="assets/images/page3/lual.png">
-                        <img src="assets/images/page3/lual.png" alt="imagem de um castelo em plena lua cheia criada com IA">
+                        <img src="assets/images/page3/lual.png"
+                            alt="imagem de um castelo em plena lua cheia criada com IA">
                     </a>
                 </div>
 
                 <div class="col-sm-6 col-md-4">
                     <a class="lightbox" href="assets/images/page3/fire.png">
-                        <img src="assets/images/page3/fire.png" alt="imagem de uma mulher com fogo em volta criada com IA">
+                        <img src="assets/images/page3/fire.png"
+                            alt="imagem de uma mulher com fogo em volta criada com IA">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4">
@@ -127,13 +152,19 @@
                     </ul>
                 </nav>
 
-                <div class="d-flex justify-content-end">
-                    <button onclick="voltarAoTopo()"
+
+                <!--
+                    <div class="d-flex justify-content-end">
+                        <button onclick="voltarAoTopo()"
                         class="btn-degrade justify-content-end align-self-end border-0 mt-2">
                         <a class="text-decoration-none text-dark fw-bold">Back to the top</a>
                     </button>
                 </div>
+            -->
             </div>
+
+            <button onclick="voltarAoTopo()" id="btnTopo" title="Ir para o topo"><strong>↑</strong></button>
+
     </section>
 
     <footer class="bg-black">
@@ -141,6 +172,25 @@
                 class="degrade"><a href="https://leodkvt.com.br" target="blank">José Leonardo</a></strong>
         </p>
     </footer>
+
+
+    <script>
+        window.onscroll = function () { mostrarBotaoTopo() };
+
+        function mostrarBotaoTopo() {
+            var btnTopo = document.getElementById("btnTopo");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btnTopo.style.display = "block";
+            } else {
+                btnTopo.style.display = "none";
+            }
+        }
+
+        function voltarAoTopo() {
+            document.body.scrollTop = 0; // Para navegadores Safari
+            document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+        }
+    </script>
 
     <script>
         function voltarAoTopo() {
