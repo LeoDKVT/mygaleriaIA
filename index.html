@@ -50,9 +50,16 @@
         </nav>
     </header>
 
-    <section class="container gallery-container my-4 rounded">
+    <section class="container gallery-container my-4 rounded text-center">
 
         <h1 class="degrade text-center pt-4 pb-2">A Magia da Inteligência Artificial em Imagens</h1>
+
+        <div class="responsive-video">
+            <video class="responsive-video embed-responsive" autoplay loop muted>
+                <source src="assets/video/ia.mp4" type="video/mp4">
+            </video>
+        </div>
+
         <p class="text-center text-white mt-3">Estas imagens foram produzidas com a ajuda de algoritmos de inteligência
             artificial. Através da combinação de palavras foi possível gerar resultados visualmente deslumbrantes e
             surpreendentes. Os avanços da IA é possivel criar imagens que desafiam a imaginação. Estas imagens são de
@@ -81,12 +88,14 @@
 
                 <div class="col-sm-6 col-md-6">
                     <a class="lightbox" href="assets/images/home/homem-de-ferro-black.jpg">
-                        <img src="assets/images/home/homem-de-ferro-black.jpg" alt="imagem do homem de ferro black criada com IA">
+                        <img src="assets/images/home/homem-de-ferro-black.jpg"
+                            alt="imagem do homem de ferro black criada com IA">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-6">
                     <a class="lightbox" href="assets/images/home/homem-aranha.jpg">
-                        <img src="assets/images/home/homem-aranha.jpg" alt="imagem do homem aranha fumando charuto criada com IA">
+                        <img src="assets/images/home/homem-aranha.jpg"
+                            alt="imagem do homem aranha fumando charuto criada com IA">
                     </a>
                 </div>
 
@@ -130,7 +139,8 @@
                 </div>
                 <div class="col-sm-6 col-md-4">
                     <a class="lightbox" href="assets/images/home/Sylphine-duo.jpg">
-                        <img src="assets/images/home/Sylphine-duo.jpg" alt="imagem de uma fenix parecido com um pássaro criada com IA">
+                        <img src="assets/images/home/Sylphine-duo.jpg"
+                            alt="imagem de uma fenix parecido com um pássaro criada com IA">
                     </a>
                 </div>
 
@@ -141,7 +151,8 @@
                 </div>
                 <div class="col-sm-6 col-md-6">
                     <a class="lightbox" href="assets/images/home/caveira-mexicana.jpg">
-                        <img src="assets/images/home/caveira-mexicana.jpg" alt="imagem de uma caveira mexicana criada com IA">
+                        <img src="assets/images/home/caveira-mexicana.jpg"
+                            alt="imagem de uma caveira mexicana criada com IA">
                     </a>
                 </div>
             </div>
@@ -163,13 +174,8 @@
                     </li>
                 </ul>
             </nav>
-
-            <div class="d-flex justify-content-end">
-                <button onclick="voltarAoTopo()" class="btn-degrade justify-content-end align-self-end border-0 mt-2">
-                    <a class="text-decoration-none text-dark fw-bold">Back to the top</a>
-                </button>
-            </div>
         </div>
+        <button onclick="voltarAoTopo()" id="btnTopo" title="Ir para o topo"><strong>↑</strong></button>
     </section>
 
     <footer class="bg-black">
@@ -179,12 +185,22 @@
     </footer>
 
     <script>
+        window.onscroll = function () { mostrarBotaoTopo() };
+
+        function mostrarBotaoTopo() {
+            var btnTopo = document.getElementById("btnTopo");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btnTopo.style.display = "block";
+            } else {
+                btnTopo.style.display = "none";
+            }
+        }
+
         function voltarAoTopo() {
             document.body.scrollTop = 0; // Para navegadores Safari
             document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
         }
     </script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
     <script>
         baguetteBox.run('.tz-gallery');

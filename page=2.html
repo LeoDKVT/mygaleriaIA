@@ -60,7 +60,7 @@
             vantagens surpreendentes, aumentando nossa capacidade criativa e nos levando além de nossas possibilidades
             individuais.
         </p>
-        
+
         <div class="tz-gallery">
             <div class="row">
                 <div class="col-sm-6 col-md-4">
@@ -86,13 +86,15 @@
                 </div>
                 <div class="col-sm-6 col-md-6">
                     <a class="lightbox" href="assets/images/page2/maqui-it.jpg">
-                        <img src="assets/images/page2/maqui-it.jpg" alt="imagem do rosto de uma mulher com a maquiagem do it criada com IA">
+                        <img src="assets/images/page2/maqui-it.jpg"
+                            alt="imagem do rosto de uma mulher com a maquiagem do it criada com IA">
                     </a>
                 </div>
 
                 <div class="col-sm-6 col-md-4">
                     <a class="lightbox" href="assets/images/page2/homem-guerra.png">
-                        <img src="assets/images/page2/homem-guerra.png" alt="imagem do homem-aranha com uma roupa de guerra criada com IA">
+                        <img src="assets/images/page2/homem-guerra.png"
+                            alt="imagem do homem-aranha com uma roupa de guerra criada com IA">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4">
@@ -108,19 +110,20 @@
 
                 <div class="col-sm-12 col-md-6">
                     <a class="lightbox" href="assets/images/page2/cao.jpg">
-                        <img src="assets/images/page2/cao.jpg" alt="imagem de um cão pulando de paraqueda criada com IA">
+                        <img src="assets/images/page2/cao.jpg"
+                            alt="imagem de um cão pulando de paraqueda criada com IA">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-6">
                     <a class="lightbox" href="assets/images/page2/cao-duo.jpg">
-                        <img src="assets/images/page2/cao-duo.jpg" alt="imagem de um cão pulando de paraqueda criada com IA">
+                        <img src="assets/images/page2/cao-duo.jpg"
+                            alt="imagem de um cão pulando de paraqueda criada com IA">
                     </a>
                 </div>
 
                 <div class="col-sm-6 col-md-4">
                     <a class="lightbox" href="assets/images/page2/Anubis.png">
-                        <img src="assets/images/page2/Anubis.png"
-                            alt="imagem do anubis criada com IA">
+                        <img src="assets/images/page2/Anubis.png" alt="imagem do anubis criada com IA">
                     </a>
                 </div>
                 <div class="col-sm-12 col-md-4">
@@ -136,12 +139,14 @@
 
                 <div class="col-sm-12 col-md-6">
                     <a class="lightbox" href="assets/images/page2/homem-espacial.jpg">
-                        <img src="assets/images/page2/homem-espacial.jpg" alt="imagem de um homem espacial criada com IA">
+                        <img src="assets/images/page2/homem-espacial.jpg"
+                            alt="imagem de um homem espacial criada com IA">
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-6">
                     <a class="lightbox" href="assets/images/page2/torre-paris.jpg">
-                        <img src="assets/images/page2/torre-paris.jpg" alt="imagem da torre de Paris pegando fogo com IA">
+                        <img src="assets/images/page2/torre-paris.jpg"
+                            alt="imagem da torre de Paris pegando fogo com IA">
                     </a>
                 </div>
             </div>
@@ -163,13 +168,8 @@
                     </li>
                 </ul>
             </nav>
-
-            <div class="d-flex justify-content-end">
-                <button onclick="voltarAoTopo()" class="btn-degrade justify-content-end align-self-end border-0 mt-2">
-                    <a class="text-decoration-none text-dark fw-bold">Back to the top</a>
-                </button>
-            </div>
         </div>
+        <button onclick="voltarAoTopo()" id="btnTopo" title="Ir para o topo"><strong>↑</strong></button>
     </section>
 
     <footer class="bg-black">
@@ -179,12 +179,22 @@
     </footer>
 
     <script>
+        window.onscroll = function () { mostrarBotaoTopo() };
+
+        function mostrarBotaoTopo() {
+            var btnTopo = document.getElementById("btnTopo");
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btnTopo.style.display = "block";
+            } else {
+                btnTopo.style.display = "none";
+            }
+        }
+
         function voltarAoTopo() {
             document.body.scrollTop = 0; // Para navegadores Safari
             document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
         }
     </script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
     <script>
         baguetteBox.run('.tz-gallery');

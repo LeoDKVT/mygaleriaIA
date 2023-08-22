@@ -103,7 +103,6 @@
                     </a>
                 </div>
 
-
                 <div class="col-sm-12 col-md-6">
                     <a class="lightbox" href="assets/images/page3/tatto.jpg">
                         <img src="assets/images/page3/tatto.jpg" alt="imagem de um mulher tatuada criada com IA">
@@ -132,39 +131,27 @@
                         <img src="assets/images/page3/leon.png" alt="outra imagem de umleão criada com IA">
                     </a>
                 </div>
-
-
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item">
-                            <a class="page-link text-white bg-dark" href="page=2" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li class="page-item"><a class="page-link text-white bg-dark" href="index">1</a></li>
-                        <li class="page-item"><a class="page-link text-white bg-dark" href="page=2">2</a></li>
-                        <li class="page-item"><a class="page-link text-white bg-dark" href="page=3">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link text-white bg-dark" href="index" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-
-
-                <!--
-                    <div class="d-flex justify-content-end">
-                        <button onclick="voltarAoTopo()"
-                        class="btn-degrade justify-content-end align-self-end border-0 mt-2">
-                        <a class="text-decoration-none text-dark fw-bold">Back to the top</a>
-                    </button>
-                </div>
-            -->
             </div>
 
-            <button onclick="voltarAoTopo()" id="btnTopo" title="Ir para o topo"><strong>↑</strong></button>
-
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link text-white bg-dark" href="page=2" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link text-white bg-dark" href="index">1</a></li>
+                    <li class="page-item"><a class="page-link text-white bg-dark" href="page=2">2</a></li>
+                    <li class="page-item"><a class="page-link text-white bg-dark" href="page=3">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link text-white bg-dark" href="index" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <button onclick="voltarAoTopo()" id="btnTopo" title="Ir para o topo"><strong>↑</strong></button>
     </section>
 
     <footer class="bg-black">
@@ -172,7 +159,6 @@
                 class="degrade"><a href="https://leodkvt.com.br" target="blank">José Leonardo</a></strong>
         </p>
     </footer>
-
 
     <script>
         window.onscroll = function () { mostrarBotaoTopo() };
@@ -191,14 +177,6 @@
             document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
         }
     </script>
-
-    <script>
-        function voltarAoTopo() {
-            document.body.scrollTop = 0; // Para navegadores Safari
-            document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
-        }
-    </script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
     <script>
         baguetteBox.run('.tz-gallery');

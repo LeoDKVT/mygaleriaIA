@@ -95,7 +95,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .btn-degrade {
-  background-image: linear-gradient(to right, #f9f871 0%, #63084d 50%, #f9f871 100%);
+  background-image: linear-gradient(
+    to right,
+    #f9f871 0%,
+    #63084d 50%,
+    #f9f871 100%
+  );
   padding: 12px 10px;
   text-transform: uppercase;
   transition: 0.5s;
@@ -106,4 +111,16 @@ body::-webkit-scrollbar-thumb {
 
 .btn-degrade:hover {
   background-position: right center; /* change the direction of the change here */
+}
+
+/*video*/
+.responsive-video {
+  max-width: 500px;
+  margin: auto;
+}
+
+.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
 }
